@@ -6,10 +6,15 @@ const startServer = async () => {
   const app: Express = express();
   const port = Number(process.env.PORT) || 8080;
 
+  // EJS View Engine
+  app.set('views', './views');
+  app.set('view engine', 'ejs');
+
+  // Access to public files
   app.use(express.static(path.join(__dirname, '/public')));
 
-  app.get('/', (req: Request, res: Response) => {
-    res.send('Server');
+  app.get('/', (_req: Request, res: Response) => {
+    res.render('/pages/index', {});
   });
 
   app.listen(port, () => {
