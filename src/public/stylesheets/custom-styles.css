@@ -23,3 +23,11 @@
 .btn-letter-spacing {
   letter-spacing: 1.5px;
 }
+
+.linear-orange-bg {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55, 0.8) 100%
+  );
+}

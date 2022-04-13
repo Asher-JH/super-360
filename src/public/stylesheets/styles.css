@@ -460,6 +460,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .absolute {
   position: absolute;
 }
+.relative {
+  position: relative;
+}
 .top-0 {
   top: 0px;
 }
@@ -473,6 +476,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .flex {
   display: flex;
@@ -510,9 +519,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
-.bg-primary-orange {
+.bg-main {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 128 8 / var(--tw-bg-opacity));
+  background-color: rgb(13 11 23 / var(--tw-bg-opacity));
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -521,6 +530,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -545,6 +562,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -559,6 +584,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-extralight {
   font-weight: 200;
 }
+.font-normal {
+  font-weight: 400;
+}
+.font-light {
+  font-weight: 300;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -572,7 +603,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-\[\#E2E2E2\] {
+.text-paragraph-color {
   --tw-text-opacity: 1;
   color: rgb(226 226 226 / var(--tw-text-opacity));
 }

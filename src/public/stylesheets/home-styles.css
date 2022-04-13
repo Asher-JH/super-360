@@ -9,3 +9,17 @@
 h1 {
   letter-spacing: 0px;
 }
+
+.normal-text-letter-spacing {
+  letter-spacing: 0.5px;
+}
+
+.blob {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  top: 20px;
+  left: -30px;
+  background: #fb37ff;
+  filter: blur(200px);
+}
