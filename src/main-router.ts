@@ -7,7 +7,7 @@ router.get('/', (_req: Request, res: Response) => {
 });
 
 router.get('/about-us', (_req: Request, res: Response) => {
-  res.render('about-us', {});
+  res.render('about', {});
 });
 
 router.get('/services', (_req: Request, res: Response) => {
