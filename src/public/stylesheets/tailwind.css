@@ -11,3 +11,18 @@
 header {
   background-color: #1f1d2b;
 }
+
+.super-logo {
+  background: linear-gradient(#ffc837 30%, #ff8008 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thin-border {
+  border-width: 1px;
+}
+
+.btn-letter-spacing {
+  letter-spacing: 1.5px;
+}
