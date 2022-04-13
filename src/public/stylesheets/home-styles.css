@@ -1,0 +1,11 @@
+#jumbo {
+  background: url('../images/jumbo-klcc.png') rgba(4, 4, 4, 0.8);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+h1 {
+  letter-spacing: 0px;
+}
