@@ -31,3 +31,19 @@
     rgba(255, 200, 55, 0.8) 100%
   );
 }
+
+#footer-main-text {
+  line-height: 50px;
+  background: linear-gradient(180deg, #ffc837 30%, #ff8008 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#footer-horizontal-divider {
+  height: 1px;
+}
+
+.footer-vertical-divider {
+  border-right-width: 1px;
+}

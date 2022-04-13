@@ -7,19 +7,19 @@ router.get('/', (_req: Request, res: Response) => {
 });
 
 router.get('/about-us', (_req: Request, res: Response) => {
-  res.render('index', {});
+  res.render('about-us', {});
 });
 
 router.get('/services', (_req: Request, res: Response) => {
-  res.render('index', {});
+  res.render('services', {});
 });
 
 router.get('/packages', (_req: Request, res: Response) => {
-  res.render('index', {});
+  res.render('packages', {});
 });
 
 router.get('/contact', (_req: Request, res: Response) => {
-  res.render('index', {});
+  res.render('contact', {});
 });
 
 export default router;
