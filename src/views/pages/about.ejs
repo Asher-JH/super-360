@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head', {title: 'About Us'})  %> 
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
     <link rel="stylesheet" href="stylesheets/about-styles.css" />
 <body>
     <%- include('../partials/header', {page: 'about'}) %>
 
     <main class="bg-main pt-16">
-        <section id="about-us-section" class="w-full bg-main container mx-auto py-10 px-12">
+        <section id="about-us-section" class="w-full bg-main container mx-auto py-10">
             <div class="w-full flex flex-row justify-center items-start mb-6">
                 <div class="w-1/2 py-10 mt-16 flex flex-col justify-center items-start">
                     <h2 class="text-white font-semibold text-5xl">About Us</h2>
@@ -47,11 +48,74 @@
             </div>
         </section>
 
-        <section id="why-choose-us-section"></section>
+        <section id="why-choose-us-section">
+            <div class="container mx-auto py-16">
+                <h2 class="text-white font-semibold text-5xl">Why Choose Us ?</h2>
+                
+                <!-- accordions -->
+                
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-transparent text-white-900" data-inactive-classes="text-white-500" class="mt-16 px-6">
+                    <h2 id="accordion-flush-heading-1">
+                        <button type="button" class="flex justify-start items-center py-5 w-full font-light text-left text-white text-2xl" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-fush-body-1">
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 text-primary-orange" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>                  
+                            <span class="pl-6">Super affordable and understanding</span>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 px-6">
+                            <p class="mb-2 text-gray-500">We offer budget-friendly packages that suits your business needs</p>
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button" class="flex justify-start items-center py-5 w-full font-light text-left text-white text-2xl" data-accordion-target="#accordion-flush-body-2" aria-expanded="true" aria-controls="accordion-fush-body-2">
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 text-primary-orange" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>                  
+                            <span class="pl-6">One-time payment & permanent</span>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 px-6">
+                            <p class="mb-2 text-gray-500">We offer budget-friendly packages that suits your business needs</p>
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-flush-heading-3">
+                        <button type="button" class="flex justify-start items-center py-5 w-full font-light text-left text-white text-2xl" data-accordion-target="#accordion-flush-body-3" aria-expanded="true" aria-controls="accordion-fush-body-3">
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 text-primary-orange" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>                  
+                            <span class="pl-6">Trustworthy & highly efficient</span>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 px-6">
+                            <p class="mb-2 text-gray-500">We offer budget-friendly packages that suits your business needs</p>
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-flush-heading-4">
+                        <button type="button" class="flex justify-start items-center py-5 w-full font-light text-left text-white text-2xl" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-fush-body-4">
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0 text-primary-orange" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>                  
+                            <span class="pl-6">Quality work with unbelievable results</span>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-5 px-6">
+                            <p class="mb-2 text-gray-500">
+                                We care about customer satisfaction from the moment we meet our clients.
+                            </p>
+                            <p class="mb-2 text-gray-500">
+                                You can trust us to deliver high quality results on time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div id="cta-section" class=""></div>
     </main>
 
     <%- include('../partials/footer') %> 
+
+    <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
 </body>
 </html>
