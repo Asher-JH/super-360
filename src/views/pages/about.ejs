@@ -5,10 +5,51 @@
 <body>
     <%- include('../partials/header', {page: 'about'}) %>
 
-    <main class="bg-main h-screen">
-        <div class="container mx-auto h-full py-12 flex justify-center items-center">
-            <h3 class="text-center text-white font-semibold text-4xl">Coming soon...</h3>
-        </div>
+    <main class="bg-main pt-16">
+        <section id="about-us-section" class="w-full bg-main container mx-auto py-10 px-12">
+            <div class="w-full flex flex-row justify-center items-start mb-6">
+                <div class="w-1/2 py-10 mt-16 flex flex-col justify-center items-start">
+                    <h2 class="text-white font-semibold text-5xl">About Us</h2>
+    
+                    <div id="about-us-section-1" class="mt-12">
+                        <p class="text-light-grey w-11/12 text-lg font-extralight about-us-paragraph-text pb-6">Super 360 started in 2020 October. The 360 technology in western 
+                            countries has become very common, so that our Asian countries also 
+                            enter this new era of technology and keep up with the times. The virtual 
+                            tour is a vision that is developing rapidly and becoming popular worldwide. 
+                        </p>
+                        <p class="text-light-grey w-11/12 text-lg font-extralight about-us-paragraph-text">
+                            It has become the latest technology for entrepreneurs to display 
+                            goods and finished products. The photography capture and reality 
+                            of the real scene bring people a new sense of real modernity and 
+                            interactive feeling, like the experience in the scene. Our service 
+                            can also save more of your precious time. 
+                        </p>
+                    </div>
+                </div>
+                <div id="director-image" class="w-1/2 pt-12">
+                    <img class="w-4/6 mx-auto mt-12 h-auto rounded-xl" src="/images/director.jpeg" />
+                    <p class="text-sm text-center font-bold text-white pt-6">Director</p>
+                </div>
+            </div>
+            <div id="about-us-section-2 w-full">
+                <p class="text-light-grey text-lg font-extralight about-us-paragraph-text pb-6">
+                    At present, Malaysia's MCO is still ongoing, everyone looked the property 
+                    on online, and buy at online. At the online can be more  save time and 
+                    save labor. Because for the complete unsealing is still unknown. So this 
+                    technology is very popular at this stage, everyone no need go to the scene 
+                    to see their property. 
+                </p>
+                <p class="text-light-grey text-lg font-extralight about-us-paragraph-text">
+                    So our plan is to recommend our service to all developers and business sectors. 
+                    And do a one-stop service to everyone, so everyone saves unnecessary trouble and 
+                    time. This technology can be developed and is a great opportunity for us.
+                </p>
+            </div>
+        </section>
+
+        <section id="why-choose-us-section"></section>
+
+        <div id="cta-section" class=""></div>
     </main>
 
     <%- include('../partials/footer') %> 
