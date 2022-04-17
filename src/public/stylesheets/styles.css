@@ -539,6 +539,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-3\/5 {
   width: 60%;
 }
+.w-2\/3 {
+  width: 66.666667%;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -551,6 +554,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex-row {
   flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 .flex-col {
   flex-direction: column;
@@ -576,6 +582,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.border-transparent {
+  border-color: transparent;
+}
 .border-r-light-grey {
   --tw-border-opacity: 1;
   border-right-color: rgb(188 188 188 / var(--tw-border-opacity));
@@ -594,6 +603,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-light-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(188 188 188 / var(--tw-bg-opacity));
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .py-10 {
   padding-top: 2.5rem;
@@ -651,6 +663,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pt-16 {
   padding-top: 4rem;
 }
@@ -665,6 +685,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pl-6 {
   padding-left: 1.5rem;
+}
+.pt-24 {
+  padding-top: 6rem;
 }
 .text-left {
   text-align: left;

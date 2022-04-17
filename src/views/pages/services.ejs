@@ -5,10 +5,37 @@
 <body>
     <%- include('../partials/header', {page: 'services'}) %>
 
-    <main class="bg-main h-screen">
-        <div class="container mx-auto h-full py-12 flex justify-center items-center">
-            <h3 class="text-center text-white font-semibold text-4xl">Coming soon...</h3>
-        </div>
+    <main class="bg-main pt-24">
+        <!-- Services -->
+        <section id="services-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                <%- include('../partials/section-header', {title: 'Services', desc: "Here are a few example of the services we offer, for more information you can contact us through WhatsApp or our phone number."}) %>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center">
+                <%- include('../partials/service-info', {isReversed: false, title: 'Commercial Capture', desc: 'Our coverage of commercial will be shop lots (any range or size), car showroom etc.', link: '#'}) %> 
+                <%- include('../partials/service-info', {isReversed: true, title: 'Residential Capture', desc: 'Our coverage of residential will be townhouse, residence, condominium, apartment etc.', link: '#'}) %> 
+                <%- include('../partials/service-info', {isReversed: false, title: 'Industry Capture', desc: 'Our coverage of industry will be factory, link factory etc.', link: '#'}) %> 
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="benefits-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                <%- include('../partials/section-header', {title: 'Benefits', desc: "Using our services comes with several benefits you can see below."}) %>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center"></div>
+        </section>
+
+        <!-- Features -->
+        <section id="features-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                <%- include('../partials/section-header', {title: 'Features', desc: "Below are some of the features that you will see when working together with us."}) %>
+            </div>
+
+            <div class="w-full flex flex-col justify-center items-center"></div>
+        </section>
     </main>
 
     <%- include('../partials/footer') %> 
