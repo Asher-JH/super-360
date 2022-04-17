@@ -31,9 +31,16 @@
             </div>
         </section>
 
-        <section id="process-section" class="w-full bg-main py-10">
+        <section id="process-section" class="w-full bg-main container mx-auto py-10 md:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
                 <%- include('../partials/section-header', {title: 'Our Process', desc: "We help you create beautiful 360 virtual tours to engage with your audience in a way that they won't forget."}) %>
+            </div>
+
+            <div class="w-full flex flex-row flex-wrap justify-center items-start my-8 px-10 relative">
+                <%- include('../partials/blurred-info-card', {iconName: 'calendar', text: 'We meet and plan on what to capture for your project'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'camera', text: 'Our professional team will setup on-site & start doing what they do best'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'edit-2', text: 'We edit & deliver a beautiful final project.'}) %>   
+                <div class="blurred-cards-bg-blob"></div>
             </div>
             
             <div class="w-full flex justify-center items-center">
@@ -41,7 +48,7 @@
             </div>
         </section>
 
-        <section id="portfolio-section" class="w-full bg-main py-10">
+        <section id="portfolio-section" class="w-full bg-main container mx-auto py-10 md:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
                 <%- include('../partials/section-header', {title: 'Past Projects', desc: "Take a look at some of our past projects to get a feel for how we get things done."}) %>
             </div>

@@ -47,3 +47,21 @@
 .footer-vertical-divider {
   border-right-width: 1px;
 }
+
+.blurred-info-card {
+  background: rgba(255, 255, 255, 0.095);
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.17),
+    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(74.4293px);
+}
+
+.blurred-cards-bg-blob {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0px;
+  top: 50%;
+  background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+  filter: blur(200px);
+  border-radius: 10px;
+}

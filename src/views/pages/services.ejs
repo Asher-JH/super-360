@@ -25,7 +25,16 @@
                 <%- include('../partials/section-header', {title: 'Benefits', desc: "Using our services comes with several benefits you can see below."}) %>
             </div>
 
-            <div class="w-full flex flex-col justify-center items-center"></div>
+            <div class="w-full flex flex-row flex-wrap justify-center items-start mt-8 px-10 relative">
+                <%- include('../partials/blurred-info-card', {iconName: 'plus-circle', text: 'Effective Control Plan'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'shield', text: 'Completely Secured'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'video', text: 'Virtual Tour'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'phone-call', text: 'Dedicated Support'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'zap', text: 'Extended Speed'}) %> 
+                <%- include('../partials/blurred-info-card', {iconName: 'settings', text: 'Simple Configuration'}) %> 
+                <div class="blurred-cards-bg-blob"></div>
+            </div>
+
         </section>
 
         <!-- Features -->

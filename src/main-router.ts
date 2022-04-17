@@ -6,7 +6,7 @@ router.get('/', (_req: Request, res: Response) => {
   res.render('index', {});
 });
 
-router.get('/about-us', (_req: Request, res: Response) => {
+router.get('/about', (_req: Request, res: Response) => {
   res.render('about', {});
 });
 
