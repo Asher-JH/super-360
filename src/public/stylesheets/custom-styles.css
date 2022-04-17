@@ -102,6 +102,8 @@ h1 {
   filter: blur(200px);
 }
 
+/* Serivce Page */
+
 .feature-img,
 .feature-desc {
   transition: 0.4s ease;
@@ -116,3 +118,59 @@ h1 {
   transform: scale(0.2);
   opacity: 0.5;
 }
+
+/* Packages page */
+
+.package-container,
+.bundle-title,
+.bundle-points-block,
+.benefits-list {
+  transition: 0.4s ease;
+}
+
+/* Refine CSS, shoulda used SCSS */
+
+.package-container:hover {
+  transform: scale(1.1);
+}
+
+.package-container:hover .bundle-title {
+  color: #fff;
+}
+
+.package-container:hover .bundle-points-block p {
+  color: #fff;
+}
+
+.package-container:hover .bundle-points-block span {
+  color: #fff;
+}
+
+.package-container:hover .benefits-list li {
+  color: #fff;
+}
+
+.package-container:hover .block-bg-featured {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55) 100%
+  );
+  mix-blend-mode: normal;
+}
+
+.package-container:hover .block-bg-normal {
+  background: #BCBCBC;
+}
+
+.package-container:hover .feature-tag {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55) 100%
+  );
+  mix-blend-mode: normal;
+  border: none;
+}
+
+/* Contact Page */

@@ -4,10 +4,53 @@
 <body>
     <%- include('../partials/header', {page: 'packages'}) %>
 
-    <main class="bg-main h-screen">
-        <div class="container mx-auto h-full py-12 flex justify-center items-center">
-            <h3 class="text-center text-white font-semibold text-4xl">Coming soon...</h3>
-        </div>
+    <main class="bg-main pt-24">
+        <!-- Packages -->
+        <!-- For cleanup, package -> bundle -->
+        <section id="packages-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                <%- include('../partials/section-header', {title: 'Packages', desc: "Here are three of the packages that we provide. Contact us if you require anymore details."}) %>
+            </div>
+
+            <div class="w-full flex flex-row justify-center items-start mt-2 packages-container">
+                <%- include('../partials/package', {
+                    title: 'Bronze Bundle',
+                    points: '5',
+                    isFeatured: false,
+                    benefits: [
+                        'Website link',
+                        'Service for project'
+                    ]
+                }) %> 
+                <%- include('../partials/package', {
+                    title: 'Silver Bundle',
+                    points: '15',
+                    isFeatured: true,
+                    benefits: [
+                        'Everything in Bronze Bundle',
+                        'Original project',
+                        'Free HD video project for 15s'
+                    ]
+                }) %> 
+                <%- include('../partials/package', {
+                    title: 'Gold Bundle',
+                    points: '35',
+                    isFeatured: false,
+                    benefits: [
+                        'Everything in Silver Bundle',
+                        '5 Free points',
+                        'Free 4K video project for 30s'
+                    ]
+                }) %> 
+            </div>
+        </section>
+
+        <!-- Advantages -->
+        <section id="advantages-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                <%- include('../partials/section-header', {title: 'Advantages', desc: "Here are just a few of the advanatages you gain when working togther with us."}) %>
+            </div>
+        </section>
     </main>
 
     <%- include('../partials/footer') %> 
