@@ -785,3 +785,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 29 43 / var(--tw-text-opacity));
 }
+@media (min-width: 768px) {
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
