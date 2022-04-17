@@ -28,8 +28,9 @@
   background: linear-gradient(
     103.91deg,
     #ff8008 21.01%,
-    rgba(255, 200, 55, 0.8) 100%
+    rgba(255, 200, 55) 100%
   );
+  mix-blend-mode: normal;
 }
 
 #footer-main-text {
@@ -64,4 +65,54 @@
   background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
   filter: blur(200px);
   border-radius: 10px;
+}
+
+.img-container-shadow {
+  box-shadow: 0px 4px 57px -26px #ffe8ac;
+}
+
+.about-us-paragraph-text {
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+}
+
+#jumbo {
+  background: url('../images/jumbo-klcc.png') rgba(4, 4, 4, 0.8);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+h1 {
+  letter-spacing: 0px;
+}
+
+.normal-text-letter-spacing {
+  letter-spacing: 0.5px;
+}
+
+.blob {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  top: 20px;
+  left: -30px;
+  background: #fb37ff;
+  filter: blur(200px);
+}
+
+.feature-img,
+.feature-desc {
+  transition: 0.4s ease;
+}
+
+.feature-card:hover .feature-img {
+  z-index: 9999;
+  transform: scale(1.1);
+}
+
+.feature-card:hover .feature-desc {
+  transform: scale(0.2);
+  opacity: 0.5;
 }
