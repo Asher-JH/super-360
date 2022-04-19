@@ -33,6 +33,11 @@
   mix-blend-mode: normal;
 }
 
+.linear-orange-bg-2 {
+  background: linear-gradient(180deg, #fd37ff 0%, #ffc837 0.01%, #ff8008 100%);
+  mix-blend-mode: normal;
+}
+
 #footer-main-text {
   line-height: 50px;
   background: linear-gradient(180deg, #ffc837 30%, #ff8008 70%);
@@ -160,7 +165,7 @@ h1 {
 }
 
 .package-container:hover .block-bg-normal {
-  background: #BCBCBC;
+  background: #bcbcbc;
 }
 
 .package-container:hover .feature-tag {
@@ -171,6 +176,11 @@ h1 {
   );
   mix-blend-mode: normal;
   border: none;
+}
+
+.advantage-card-icon {
+  stroke: rgba(255, 133, 12, 0.4);;
+  fill: none;
 }
 
 /* Contact Page */
