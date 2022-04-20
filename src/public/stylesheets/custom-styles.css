@@ -184,3 +184,6 @@ h1 {
 }
 
 /* Contact Page */
+.contact-header-text {
+  line-height: 4.8rem;
+}
