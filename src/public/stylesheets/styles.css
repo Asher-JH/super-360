@@ -585,6 +585,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[1px\] {
   height: 1px;
 }
+.h-72 {
+  height: 18rem;
+}
 .max-h-\[1px\] {
   max-height: 1px;
 }
@@ -803,13 +806,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pt-16 {
   padding-top: 4rem;

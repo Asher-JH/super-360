@@ -12,9 +12,9 @@
             </div>
 
             <div class="w-full flex flex-col justify-center items-center">
-                <%- include('../partials/service-info', {isReversed: false, title: 'Commercial Capture', desc: 'Our coverage of commercial will be shop lots (any range or size), car showroom etc.', link: '#'}) %> 
-                <%- include('../partials/service-info', {isReversed: true, title: 'Residential Capture', desc: 'Our coverage of residential will be townhouse, residence, condominium, apartment etc.', link: '#'}) %> 
-                <%- include('../partials/service-info', {isReversed: false, title: 'Industry Capture', desc: 'Our coverage of industry will be factory, link factory etc.', link: '#'}) %> 
+                <%- include('../partials/service-info', {id: '0', isReversed: false, title: 'Commercial Capture', desc: 'Our coverage of commercial will be shop lots (any range or size), car showroom etc.', url: 'https://kuula.co/share/collection/7qQtL?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', imgLink: 'commercial-preview.png'}) %> 
+                <%- include('../partials/service-info', {id: '1', isReversed: true, title: 'Residential Capture', desc: 'Our coverage of residential will be townhouse, residence, condominium, apartment etc.', url: 'https://kuula.co/share/collection/7qTVx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', imgLink: 'residential-preview.png'}) %> 
+                <%- include('../partials/service-info', {id: '2', isReversed: false, title: 'Industry Capture', desc: 'Our coverage of industry will be factory, link factory etc.', url: 'https://kuula.co/share/collection/7q2qx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', imgLink: 'industry-preview.png'}) %> 
             </div>
         </section>
 
@@ -55,5 +55,6 @@
     </main>
 
     <%- include('../partials/footer') %> 
+    <script type="text/javascript" src="/js/services.js"></script>
 </body>
 </html>
