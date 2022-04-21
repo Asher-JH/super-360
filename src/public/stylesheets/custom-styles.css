@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+.header-line-height {
+  line-height: 1.2;
+}
+
 #custom-nav {
   /* background-color: #1f1d2b; */
   z-index: 99999;
