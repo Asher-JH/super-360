@@ -650,6 +650,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-1\/5 {
   width: 20%;
 }
+.w-24 {
+  width: 6rem;
+}
 .w-3\/5 {
   width: 60%;
 }
