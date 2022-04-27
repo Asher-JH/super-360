@@ -7,12 +7,12 @@
     <main class="bg-main pt-24">
         <!-- Packages -->
         <!-- For cleanup, package -> bundle -->
-        <section id="packages-section" class="w-full bg-main container mx-auto py-10 md:px-16">
-            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+        <section id="packages-section" class="w-full bg-main container mx-auto py-10 px-0 lg:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-4 lg:px-5">
                 <%- include('../partials/section-header', {title: 'Packages', desc: "Here are three of the packages that we provide. Contact us if you require anymore details."}) %>
             </div>
 
-            <div class="w-full flex flex-row justify-center items-start mt-2 packages-container">
+            <div class="w-full flex flex-row flex-wrap justify-center items-start mt-2 packages-container">
                 <%- include('../partials/package', {
                     title: 'Bronze Bundle',
                     points: '5',
@@ -46,12 +46,12 @@
         </section>
 
         <!-- Advantages -->
-        <section id="advantages-section" class="w-full bg-main container mx-auto py-10 md:px-16">
-            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+        <section id="advantages-section" class="w-full bg-main container mx-auto py-10 px-4 lg:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-4 lg:px-5">
                 <%- include('../partials/section-header', {title: 'Advantages', desc: "Here are just a few of the advanatages you gain when working togther with us."}) %>
             </div>
 
-            <div class="w-full flex flex-row flex-wrap justify-start items-start mt-8 px-10">
+            <div class="w-full flex flex-row flex-wrap justify-start items-start mt-8 px-0 lg:px-10">
                 <%- include('../partials/advantage-card', {iconName: 'video', title: 'Increase Sales', desc: 'It will be a stronghold for attracting more sales without compromising safety'}) %> 
                 <%- include('../partials/advantage-card', {iconName: 'users', title: 'Stand Out From Others', desc: 'Virtual tour give you a competitive edge and make your business stand out in the Market'}) %> 
                 <%- include('../partials/advantage-card', {iconName: 'arrow-down', title: 'Reduce Bounce Rate', desc: 'You can use the virtual tour to keep visitors engaged for longer periods of time'}) %> 

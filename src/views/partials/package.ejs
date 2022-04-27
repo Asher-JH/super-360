@@ -1,18 +1,18 @@
-<div class="w-1/3 flex flex-col justify-center items-start package pt-8 my-12 package-container  <%- isFeatured ? 'border-l border-r border-light-grey' : '' %>">
+<div class="w-1/2 lg:w-1/3 flex flex-col justify-center items-start package pt-8 my-12 package-container  <%- isFeatured ? 'border-l lg:border-r border-light-grey' : '' %>">
     <!-- Bundle title -->
-    <h4 class="w-full text-center text-light-grey font-semibold text-3xl bundle-title"><%- title %></h4>
+    <h4 class="w-full text-center text-light-grey font-semibold text-4xl lg:text-3xl bundle-title"><%- title %></h4>
 
     <!-- Bundle points needed -->
-    <div class="my-10 mx-auto flex flex-col justify-center items-center px-12 py-5 rounded-xl border border-super-light-grey bundle-points-block <%- isFeatured ? 'block-bg-featured' : 'block-bg-normal' %> ">
-        <p class="text-center text-light-grey font-light text-sm">Minumum of</p>
-        <span class="text-center font-bold text-5xl text-light-grey my-1"><%- points %></span>
+    <div class="my-10 mx-auto flex flex-col justify-center items-center px-14 lg:px-12 py-5 lg:py-5 rounded-xl border border-super-light-grey bundle-points-block  <%- isFeatured ? 'mobile-default-block-bg mobile-default-text-color block-bg-featured text-white' : 'block-bg-normal' %> ">
+        <p class="text-center text-light-grey font-light text-lg lg:text-sm">Minumum of</p>
+        <span class="text-center font-bold text-6xl lg:text-5xl text-light-grey my-1"><%- points %></span>
         <p class="text-center text-light-grey font-light text-base">points*</p>
     </div>
 
     <!-- Bundle benefits -->
     <ul class="w-full px-5 benefits-list">
         <% benefits.forEach(element => { %>
-            <li class="text-center text-light-grey font-light text-base mb-3">
+            <li class="text-center text-light-grey font-light text-lg lg:text-base mb-3">
                 <%- element %> 
             </li>
         <% }) %>
@@ -21,7 +21,7 @@
     <!-- If featured-package show -->
 
     <% if (isFeatured) { %>    
-        <div class="mx-auto mt-16 px-8 py-2 rounded-lg border border-light-grey text-white text-base font-normal feature-tag">
+        <div class="hidden lg:block mx-auto mt-16 px-8 py-2 rounded-lg border border-light-grey text-white text-base font-normal feature-tag mobile-default-feature-tag">
             Most Valueable
         </div>
     <% } %>

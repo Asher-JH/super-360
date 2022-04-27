@@ -160,7 +160,23 @@ h1 {
   color: #fff;
 }
 
+.mobile-default-text-color .bundle-title,
+.bundle-points-block p,
+.bundle-points-block span,
+.benefits-list li {
+  color: #fff;
+}
+
 .package-container:hover .block-bg-featured {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55) 100%
+  );
+  mix-blend-mode: normal;
+}
+
+.mobile-default-block-bg {
   background: linear-gradient(
     103.91deg,
     #ff8008 21.01%,
@@ -174,6 +190,16 @@ h1 {
 }
 
 .package-container:hover .feature-tag {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55) 100%
+  );
+  mix-blend-mode: normal;
+  border: none;
+}
+
+.mobile-default-feature-tag {
   background: linear-gradient(
     103.91deg,
     #ff8008 21.01%,
