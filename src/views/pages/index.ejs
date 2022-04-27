@@ -7,9 +7,9 @@
     <main class="bg-main">
         <div id="jumbo" class="w-full h-screen">
             <div class="container h-full mx-auto flex flex-col justify-center items-center pt-12">
-                <h1 class="w-1/2 px-10 text-center font-semibold text-white text-7xl header-line-height">Experience Super 360 Virtual Reality</h1>
-                <h3 class="w-1/3 py-10 text-center text-xl font-extralight text-paragraph-color">Grow your business with highly professional virtual tours & photography.</h5>
-                <div id="btn-container" class="w-1/2 px-12 flex flex-row justify-around items-center">
+                <h1 class="w-full lg:w-1/2 px-10 text-center font-semibold text-white text-8xl lg:text-7xl header-line-height">Experience Super 360 Virtual Reality</h1>
+                <h3 class="w-full lg:w-1/3 py-16 lg:py-10 text-center text-3xl lg:text-xl font-extralight text-paragraph-color">Grow your business with highly professional virtual tours & photography.</h5>
+                <div id="btn-container" class="w-full lg:w-1/2 px-12 flex flex-row justify-around items-center">
                     <%- include('../partials/button', {label: 'Our Portfolio', href: "#portfolio-section", isPrimary: true}) %>
                     <%- include('../partials/button', {label: 'About Us', href: "/about", isPrimary: false}) %>
                 </div>
@@ -20,12 +20,12 @@
             <div class="blob"></div>
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
                 <div class="w-1/2 flex flex-col justify-center items-center">
-                    <h3 class="font-normal text-white text-5xl mb-5">50+</h3>
-                    <h5 class="font-light text-lg text-light-grey normal-text-letter-spacing">Target clients</h5>
+                    <h3 class="font-normal text-white text-7xl lg:text-5xl mb-5">50+</h3>
+                    <h5 class="font-light text-xl lg:text-lg text-light-grey normal-text-letter-spacing">Target clients</h5>
                 </div>
                 <div class="w-1/2 flex flex-col justify-center items-center">
-                    <h3 class="font-normal text-white text-5xl mb-5">100+</h3>
-                    <h5 class="font-light text-lg text-light-grey normal-text-letter-spacing">Target projects</h5>
+                    <h3 class="font-normal text-white text-7xl lg:text-5xl mb-5">100+</h3>
+                    <h5 class="font-light text-xl lg:text-lg text-light-grey normal-text-letter-spacing">Target projects</h5>
                 </div>
             </div>
         </section>
@@ -35,7 +35,7 @@
                 <%- include('../partials/section-header', {title: 'Our Process', desc: "We help you create beautiful 360 virtual tours to engage with your audience in a way that they won't forget."}) %>
             </div>
 
-            <div class="w-full flex flex-row flex-wrap justify-center items-start my-8 px-10 relative">
+            <div class="w-full flex flex-row flex-wrap justify-center items-start my-8 px-2 lg:px-10 relative">
                 <%- include('../partials/blurred-info-card', {iconName: 'calendar', text: 'We meet and plan on what to capture for your project'}) %> 
                 <%- include('../partials/blurred-info-card', {iconName: 'camera', text: 'Our professional team will setup on-site & start doing what they do best'}) %> 
                 <%- include('../partials/blurred-info-card', {iconName: 'edit-2', text: 'We edit & deliver a beautiful final project.'}) %>   
@@ -47,12 +47,12 @@
             </div>
         </section>
 
-        <section id="portfolio-section" class="w-full bg-main container mx-auto py-10 md:px-16">
+        <section id="portfolio-section" class="w-full bg-main container mx-auto py-10 px-4 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
                 <%- include('../partials/section-header', {title: 'Past Projects', desc: "Take a look at some of our past projects to get a feel for how we get things done."}) %>
             </div>
 
-            <div class="w-4/5 mx-auto flex flex-col">
+            <div class="w-full lg:w-4/5 mx-auto flex flex-col">
                 <%- include('../partials/past-project', {id: '0', url: 'https://kuula.co/share/collection/7qB8R?logo=-1&card=1&info=0&fs=2&vr=2&sd=2&initload=4&autopalt=6&thumbs=1', title: 'Dermique'}) %> 
                 <%- include('../partials/past-project', {id: '1', url: 'https://kuula.co/share/collection/7qQtL?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Dar Al Arab'}) %> 
                 <%- include('../partials/past-project', {id: '2', url: 'https://kuula.co/share/collection/7qTVx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Midfields Condo'}) %> 
