@@ -596,6 +596,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-16 {
   height: 4rem;
 }
+.h-\[350px\] {
+  height: 350px;
+}
 .h-72 {
   height: 18rem;
 }
