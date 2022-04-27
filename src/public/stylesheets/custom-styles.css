@@ -244,3 +244,13 @@ h1 {
 .iframe-container {
   transition: 0.6s ease;
 }
+
+.active-nav-link-mobile {
+  background: linear-gradient(
+    103.91deg,
+    #ff8008 21.01%,
+    rgba(255, 200, 55) 100%
+  );
+  mix-blend-mode: normal;
+  border: none;
+}

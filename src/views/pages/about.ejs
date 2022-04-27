@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
     <%- include('../partials/head', {title: 'About Us'})  %> 
 <body>
     <%- include('../partials/header', {page: 'about'}) %>
+    <%- include('../partials/header-mobile', {page: 'about'}) %>
 
     <main class="bg-main pt-16">
         <section id="about-us-section" class="w-full bg-main container mx-auto py-10 px-0 lg:px-16">
@@ -116,7 +116,5 @@
     </main>
 
     <%- include('../partials/footer') %> 
-
-    <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
 </body>
 </html>
