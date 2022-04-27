@@ -7,7 +7,7 @@ for (let i = 0; i < 3; i += 1) {
     const container = containers[i];
     const infoContainer = infoContainers[i];
 
-    container.style.width = '80%';
+    container.style.width = '100%';
     infoContainer.style.display = 'none';
 
     const img = container.querySelector('img');
