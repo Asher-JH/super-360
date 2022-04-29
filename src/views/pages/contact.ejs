@@ -43,8 +43,33 @@
         <div id="cta-section" class="container mx-auto py-16">
             <%- include('../partials/call-to-action', {ctaDesc: 'Find out more about the services we provide.', label: 'View services', href: '/services'}) %> 
         </div>
+
+        <section class="w-full bg-main container mx-auto py-10 px-4 lg:px-16">
+                    <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
+                        <%- include('../partials/section-header', {title: 'Contact Us', desc: ""}) %>
+                    </div>
+            <form id="contact-form" class="w-full flex flex-col justify-center items-center" action="POST">
+                <div class="w-full mb-4">
+                    <label class="w-full block text-light-grey text-sm font-bold mb-2" for="name"></label>
+                    <input id="nameInput" class="w-full rounded-sm" type="text" placeholder="Name">
+                </div>
+                <div class="w-full mb-4">
+                    <label class="w-full block text-light-grey text-sm font-bold mb-2" for="email"></label>
+                    <input id="emailInput" type="text" class="w-full rounded-sm" placeholder="Email">
+                </div>
+                <div class="w-full mb-4">
+                    <label class="w-full block text-light-grey text-sm font-bold mb-2" for="message"></label>
+                    <textarea id="messageInput" rows="10" id="message" class="w-full rounded-lg" type="text" placeholder="Message"></textarea>
+                </div>
+
+                <button id="submit-button" type="submit" class="uppercase text-xl lg:text-sm py-4 px-12 rounded-xl font-bold btn-letter-spacing transition-colors hover:cursor-pointer text-white hover:text-white linear-orange-bg ">
+                   Submit
+                </button>
+            </form>
+        </section>
     </main>
 
     <%- include('../partials/footer') %> 
+    <script type="text/javascript" src="/js/contact.js"></script>
 </body>
 </html>
