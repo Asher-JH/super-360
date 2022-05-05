@@ -29,8 +29,8 @@ router.post('/new-contact', async (req: Request, res: Response) => {
   if (process.env.SENDGRID_API_KEY) {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
-      to: 'asherchan2002@hotmail.com',
-      from: 'asherchan1177@gmail.com',
+      to: process.env.SEND_TO_EMAIL,
+      from: 'techbytes-solutions@engineer.com',
       subject: 'New contact from Super-360',
       text: `${name} ${email} ${message}`,
       html: '<strong>Woohoo</strong>',
@@ -39,7 +39,7 @@ router.post('/new-contact', async (req: Request, res: Response) => {
         email,
         message,
       },
-      template_id: 'd-41c96c29b20c4b42845290aff9b715cd',
+      template_id: process.env.TEMPLATE_ID,
     };
     try {
       await sgMail.send(msg);
