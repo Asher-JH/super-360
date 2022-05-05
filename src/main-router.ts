@@ -1,6 +1,5 @@
 import express, { Request, Response } from 'express';
-// @ts-expect-error // No TS package
-import emailSDK from 'sib-api-v3-sdk';
+import sgMail from '@sendgrid/mail';
 
 const router = express.Router();
 
@@ -24,39 +23,30 @@ router.get('/contact', (_req: Request, res: Response) => {
   res.render('contact', {});
 });
 
-router.post('/new-contact', (req: Request, res: Response) => {
+router.post('/new-contact', async (req: Request, res: Response) => {
   const { name, email, message } = req.body;
 
-  const client = emailSDK.ApiClient.instance;
-  const apiKey = client.authentications['api-key'];
-  apiKey.apiKey = process.env.EMAIL_API_KEY;
-
-  const apiInstance = new emailSDK.TransactionalEmailApi();
-  let sendSmtpEmail = new emailSDK.SendSmtpEmail();
-
-  sendSmtpEmail = {
-    to: [
-      {
-        email: 'asherchan1188@gmail.com',
-        name: 'Asher Chan',
+  if (process.env.SENDGRID_API_KEY) {
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    const msg = {
+      to: 'asherchan2002@hotmail.com',
+      from: 'asherchan1177@gmail.com',
+      subject: 'New contact from Super-360',
+      text: `${name} ${email} ${message}`,
+      html: '<strong>Woohoo</strong>',
+      dynamic_template_data: {
+        name,
+        email,
+        message,
       },
-    ],
-    templateId: 1,
-    params: {
-      name,
-      email,
-      message,
-    },
-  };
-
-  apiInstance.sendTransacEmail(sendSmtpEmail).then(
-    () => {
-      console.log(`API called successfully.`);
-    },
-    () => {
-      console.error('Thers was a problem sending email.');
+      template_id: 'd-41c96c29b20c4b42845290aff9b715cd',
+    };
+    try {
+      await sgMail.send(msg);
+    } catch (error) {
+      console.error(error);
     }
-  );
+  }
 
   res.redirect('/contact');
 });
