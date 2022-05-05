@@ -18,6 +18,10 @@ body {
   z-index: 99999;
 }
 
+#btn-container a {
+  margin-bottom: 0.8rem;
+}
+
 .super-logo {
   background: linear-gradient(#ffc837 30%, #ff8008 70%);
   -webkit-background-clip: text;
@@ -48,11 +52,14 @@ body {
 }
 
 #footer-main-text {
-  line-height: 50px;
   background: linear-gradient(180deg, #ffc837 30%, #ff8008 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.footer-main-text-desktop {
+  line-height: 50px;
 }
 
 #footer-horizontal-divider {
@@ -91,7 +98,8 @@ body {
 }
 
 #jumbo {
-  background: url('https://res.cloudinary.com/techbytes-solutions/image/upload/v1651758890/jumbo-klcc_pra2qn.png') rgba(4, 4, 4, 0.8);
+  background: url('https://res.cloudinary.com/techbytes-solutions/image/upload/v1651758890/jumbo-klcc_pra2qn.png')
+    rgba(4, 4, 4, 0.8);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
