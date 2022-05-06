@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head', {title: 'Home'})  %> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body>
     <%- include('../partials/header', {page: 'home'}) %>
     <%- include('../partials/header-mobile', {page: 'home'}) %>
 
     <main class="bg-main">
-        <div id="jumbo" class="w-full h-screen">
-            <div class="container h-full mx-auto flex flex-col justify-center items-center pt-12">
-                <h1 class="w-full lg:w-1/2 px-10 text-center font-semibold text-white text-5xl lg:text-7xl header-line-height">Experience Super 360 Virtual Reality</h1>
-                <h3 class="w-2/3 lg:w-1/3 py-8 lg:py-10 text-center text-lg lg:text-xl font-extralight text-paragraph-color">Grow your business with highly professional virtual tours & photography.</h5>
-                <div id="btn-container" class="w-full lg:w-1/2 px-12 flex flex-col lg:flex-row justify-around items-center">
-                    <%- include('../partials/button', {label: 'Our Portfolio', href: "#portfolio-section", isPrimary: true}) %>
-                    <%- include('../partials/button', {label: 'Ask For Quote', href: "/contact#form", isPrimary: false}) %>
-                </div>
+        <div id="jumbo" class="w-full h-screen relative">
+            <div id="main-tour" class="h-screen absolute top-0 left-0 w-full opacity-0">
+                <iframe id="main-iframe" width="100%" height="100%" style="width: 100%; height: 100%; max-width: 100%;" frameborder="0" allowfullscreen allow="xr-spatial-tracking; gyroscope; accelerometer" src="https://kuula.co/share/collection/7q3dc?fs=1&vr=1&&sd=1&autorotate=0.3&autop=12&autopalt=1&thumbs=3&chromeless=0&logo=1&enablejs=1&fid=0f21&priority=1"></iframe>
             </div>
-        </div>  
+            <div id="jumbo-container" class="h-screen" >
+                <div class="container h-full mx-auto flex flex-col justify-center items-center pt-12" data-aos="fade-in">
+                    <h1 class="w-full lg:w-1/2 px-10 text-center font-semibold text-white text-5xl lg:text-7xl header-line-height">Experience Super 360 Virtual Reality</h1>
+                    <h3 class="w-2/3 lg:w-1/3 py-8 lg:py-10 text-center text-lg lg:text-xl font-extralight text-paragraph-color">Grow your business with highly professional virtual tours & photography.</h5>
+                    <div id="btn-container" class="w-full lg:w-1/2 px-12 flex flex-col lg:flex-row justify-around items-center">
+                        <%- include('../partials/button', {label: 'Our Portfolio', href: "#portfolio-section", isPrimary: true}) %>
+                        <%- include('../partials/button', {label: 'Ask For Quote', href: "/contact#form", isPrimary: false}) %>
+                    </div>
+                </div>
+            </div>  
+        </div>
 
         <section id="targets-section" class="w-full relative bg-main py-10">
             <div class="blob"></div>
@@ -68,5 +74,9 @@
 
     <%- include('../partials/footer') %> 
     <script type="text/javascript" src="/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

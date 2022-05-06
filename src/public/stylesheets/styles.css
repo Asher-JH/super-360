@@ -859,6 +859,12 @@ input:checked + .toggle-bg {
   bottom: 0px;
   left: 0px;
 }
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
 .top-4 {
   top: 1rem;
 }
@@ -867,12 +873,6 @@ input:checked + .toggle-bg {
 }
 .-bottom-20 {
   bottom: -5rem;
-}
-.left-0 {
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
 }
 .z-20 {
   z-index: 20;
