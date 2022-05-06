@@ -3,7 +3,9 @@
     <%- include('../partials/head', {title: 'Home'})  %> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body>
-    <%- include('../partials/header', {page: 'home'}) %>
+    <div class="hidden md:block">
+        <%- include('../partials/header', {page: 'home'}) %>
+    </div>
     <%- include('../partials/header-mobile', {page: 'home'}) %>
 
     <main class="bg-main">
