@@ -19,7 +19,14 @@ form.addEventListener('submit', (e) => {
     },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
+    .then((response) => {
+      response.json();
+      // eslint-disable-next-line no-alert
+      alert('Message sent!');
+      document.querySelector('#nameInput').value = '';
+      document.querySelector('#emailInput').value = '';
+      document.querySelector('#messageInput').value = '';
+    })
     .catch((error) => {
       console.error('Error:', error);
     });
