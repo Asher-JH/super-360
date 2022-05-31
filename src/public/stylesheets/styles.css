@@ -971,6 +971,9 @@ input:checked + .toggle-bg {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1824,6 +1827,18 @@ input:checked + .toggle-bg {
     padding-right: 4rem;
   }
 
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1926,6 +1941,10 @@ input:checked + .toggle-bg {
     margin-bottom: 0px;
   }
 
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .lg\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -1996,6 +2015,10 @@ input:checked + .toggle-bg {
 
   .lg\:w-3\/5 {
     width: 60%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .lg\:flex-row {
@@ -2092,24 +2115,17 @@ input:checked + .toggle-bg {
     padding-bottom: 1.25rem;
   }
 
-  .lg\:pt-16 {
-    padding-top: 4rem;
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pb-6 {
     padding-bottom: 1.5rem;
   }
 
-  .lg\:pt-36 {
-    padding-top: 9rem;
-  }
-
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pt-24 {
-    padding-top: 6rem;
   }
 
   .lg\:pt-12 {

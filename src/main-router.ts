@@ -19,6 +19,10 @@ router.get('/packages', (_req: Request, res: Response) => {
   res.render('packages', {});
 });
 
+router.get('/video-platform', (_req: Request, res: Response) => {
+  res.render('video-platform', {});
+});
+
 router.get('/contact', (_req: Request, res: Response) => {
   res.render('contact', {});
 });

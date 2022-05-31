@@ -283,3 +283,7 @@ h1 {
   mix-blend-mode: normal;
   border: none;
 }
+
+.video-platform-desc-text {
+  line-height: 1.6rem;
+}
