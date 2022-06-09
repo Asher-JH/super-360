@@ -56,6 +56,22 @@
             </div>
         </section>
 
+         <!-- Advantages -->
+         <section id="advantages-section" class="w-full bg-main container mx-auto py-10 px-4 lg:px-16">
+            <div class="container mx-auto flex flex-row justify-center items-center py-10 px-4 lg:px-5">
+                <%- include('../partials/section-header', {title: 'Advantages', desc: "Here are just a few of the advanatages you gain when working togther with us."}) %>
+            </div>
+
+            <div class="w-full flex flex-row flex-wrap justify-start items-start mt-8 px-0 lg:px-10">
+                <%- include('../partials/advantage-card', {iconName: 'video', title: 'Increase Sales', desc: 'It will be a stronghold for attracting more sales without compromising safety'}) %> 
+                <%- include('../partials/advantage-card', {iconName: 'users', title: 'Stand Out From Others', desc: 'Virtual tour give you a competitive edge and make your business stand out in the Market'}) %> 
+                <%- include('../partials/advantage-card', {iconName: 'arrow-down', title: 'Reduce Bounce Rate', desc: 'You can use the virtual tour to keep visitors engaged for longer periods of time'}) %> 
+                <%- include('../partials/advantage-card', {iconName: 'dollar-sign', title: 'Save Cost', desc: 'The virtual tour do not require any other software to embed on your website/social media platform'}) %> 
+                <%- include('../partials/advantage-card', {iconName: 'clock', title: 'Save Time', desc: 'Customers can preview your business anytime and anywhere'}) %> 
+                <%- include('../partials/advantage-card', {iconName: 'smartphone', title: 'Social Media', desc: 'Embedded on all social Media Platforms'}) %> 
+            </div>
+        </section>
+
         <section id="portfolio-section" class="w-full bg-main container mx-auto pb-4 lg:pb-10 py-10 px-4 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
                 <%- include('../partials/section-header', {title: 'Past Projects', desc: "Take a look at some of our past projects to get a feel for how we get things done."}) %>

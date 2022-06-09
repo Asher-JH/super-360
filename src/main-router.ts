@@ -15,9 +15,10 @@ router.get('/services', (_req: Request, res: Response) => {
   res.render('services', {});
 });
 
-router.get('/packages', (_req: Request, res: Response) => {
-  res.render('packages', {});
-});
+// Not used anymore
+// router.get('/packages', (_req: Request, res: Response) => {
+//   res.render('packages', {});
+// });
 
 router.get('/features', (_req: Request, res: Response) => {
   res.render('features', {});
