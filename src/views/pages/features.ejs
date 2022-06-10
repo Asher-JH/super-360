@@ -23,9 +23,9 @@
                 <%- include('../partials/feature-card', {imageSrc: 'https://res.cloudinary.com/techbytes-solutions/image/upload/v1651758885/4k-aerial-videos_yml82j.jpg', title: '4K Aerial Videos', desc: 'Amazing high definition videos',}) %> 
             </div>
         </section>
-        
+
         <section id="about-us-section" class="w-full bg-main container mx-auto py-10 px-8 lg:px-16">
-            <h2 class="text-white font-semibold text-center lg:text-left text-3xl lg:text-5xl mt-4 lg:mt-24">Video Platform</h2>
+            <h2 class="text-white font-semibold text-center text-3xl lg:text-5xl mt-4 lg:mt-24">Video Platform</h2>
             <!-- Cards -->
  
             <div class="w-full flex flex-col justify-center items-center">
@@ -36,8 +36,13 @@
                 <%- include("../partials/video-platform-card", {isIframe: true, title: "Adaptive HDR Panorama", videoURL: "https://slides.com/esmart/360-vr-autopilot/embed?style=hidden&byline=hidden&share=hidden", poster: "", desc: "We make HDR dynamic. Inspired by the behaviour of the human eye, which adapts to light and dark dynamically by adjusting the iris, we make the panoramas adapt. This means that depending on the area of the panorama that the user is looking at, light and exposure adapt accordingly. A great feature, unique to 3DVista, to make HDR seem more real."}) %>
                 <%- include("../partials/video-platform-card", {isIframe: false, title: "Optimized For All Devices", videoURL: "https://res.cloudinary.com/techbytes-solutions/video/upload/v1653931533/optimised-for-devices_uvskub.mp4", poster: "", desc: "Tours created with VT PRO are always and automatically compatible with all devices, PCs, Macs, tablets, iOS and Android phones - without the need to install any special drivers or software. But there's more. Thanks to the flexibility of our skin editor, you can create skins that adapt to the user's screen size and resolution. Furthermore, the tour will realize from which device it is being opened and use the optimized media quality and frame rate to guarantee a flawless and fast-loading experience."}) %>
                 <%- include("../partials/video-platform-card", {isIframe: false, title: "Maps, Floor Plans & Compass", videoURL: "https://res.cloudinary.com/techbytes-solutions/video/upload/v1653931535/maps-video_qmrghc.mp4", poster: "", desc: "Place maps or floor plans for orientation on top of your virtual tours. These can be equipped with hotspots, too, so that your audience can jump from room to room or even from floor to floor more quickly. A radar tool indicates at all times in which direction the user is currently looking."}) %>
+                <%- include("../partials/video-platform-card", {isIframe: false, title: "Virtual Meeting Room", videoURL: "https://res.cloudinary.com/techbytes-solutions/video/upload/v1654820178/video-super_vnm1ti.mp4", poster: "", desc: "A virtual meeting room on a 360º tour, this feature can best be described as a relationship between a video call and 3DVista. Use your default virtual tour on your website and allow your audience to dial in and have you guide them through the virtual tour. They can look around themselves or follow your screen so you can point out details and give a personal (sales) presentation. They can also request that their screens be displayed on yours and other attendees' screens to ask questions about specific parts of the tour."}) %>
             </div>
         </section>
+
+        <div id="cta-section" class="container mx-auto py-16">
+            <%- include('../partials/call-to-action', {ctaDesc: 'Persuaded? Find out what services we offer.', label: 'Get Quote', href: '/contact'}) %> 
+        </div>
     </main>
 
     <%- include('../partials/footer') %> 
