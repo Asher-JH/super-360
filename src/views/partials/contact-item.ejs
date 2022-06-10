@@ -1,4 +1,8 @@
 <li class="w-full flex flex-row justify-start items-center mb-6 hover:underline">
-    <i class="mr-4 stroke-light-grey w-6 h-6" data-feather="<%- iconName %>"></i>
+    <% if (iconName !== 'whatsapp') { %>
+        <i class="mr-4 stroke-light-grey w-6 h-6" data-feather="<%- iconName %>"></i>
+    <% } else { %>
+        <img src="/images/whatsapp-icon.svg" class="w-8 h-8 mr-4" alt="whatsapp-icon" /> 
+    <% } %>
     <a class="text-light-grey" href="<%- href %>"><%- link || href %> </a>
 </li>

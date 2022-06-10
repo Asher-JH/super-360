@@ -1088,9 +1088,6 @@ input:checked + .toggle-bg {
 .w-1\/5 {
   width: 20%;
 }
-.w-24 {
-  width: 6rem;
-}
 .w-11\/12 {
   width: 91.666667%;
 }
