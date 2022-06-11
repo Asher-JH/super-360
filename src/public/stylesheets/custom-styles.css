@@ -287,3 +287,16 @@ h1 {
 .video-platform-desc-text {
   line-height: 1.6rem;
 }
+
+.whatsapp-floating-button {
+  position: fixed;
+  border-radius: 50px;
+  background-color: #25d366;
+  color: #fff;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
