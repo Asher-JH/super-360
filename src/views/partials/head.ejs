@@ -5,7 +5,9 @@
 <link rel="icon" href="/images/logo.ico">
 
 <!-- Load CSS library -->
-<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
+<% if (useFlowbite) { %>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
+<% } %>  
 
 <link rel="stylesheet" href="/stylesheets/styles.css">
 <link rel="stylesheet" href="/stylesheets/tailwind.css">
