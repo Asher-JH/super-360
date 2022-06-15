@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {title: 'Home', useFlowbite: false})  %> 
+    <%- include('../partials/head', {title: 'Home', useFlowbite: false, metaDesc: 'Welcome to Super-360 Virtual Reality by Lion Realty. Take a look at some of our past projects to see what kind of work we produce and also read about the possible advantages of working together with us.'})  %> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <body>
     <div class="hidden md:block">
@@ -41,7 +41,7 @@
 
         <section id="process-section" class="w-full bg-main container mx-auto py-10 md:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
-                <%- include('../partials/section-header', {title: 'Our Process', desc: "We help you create beautiful 360 virtual tours to engage with your audience in a way that they won't forget."}) %>
+                <%- include('../partials/section-header', {useH1: false, title: 'Our Process', desc: "We help you create beautiful 360 virtual tours to engage with your audience in a way that they won't forget."}) %>
             </div>
 
             <div class="w-full flex flex-row flex-wrap justify-center items-start my-8 px-2 lg:px-10 relative">
@@ -59,7 +59,7 @@
          <!-- Advantages -->
          <section id="advantages-section" class="w-full bg-main container mx-auto py-10 px-4 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-4 lg:px-5">
-                <%- include('../partials/section-header', {title: 'Advantages', desc: "Here are just a few of the advanatages you gain when working togther with us."}) %>
+                <%- include('../partials/section-header', {useH1: false, title: 'Advantages', desc: "Here are just a few of the advanatages you gain when working togther with us."}) %>
             </div>
 
             <div class="w-full flex flex-row flex-wrap justify-start items-start mt-8 px-0 lg:px-10">
@@ -74,7 +74,7 @@
 
         <section id="portfolio-section" class="w-full bg-main container mx-auto pb-4 lg:pb-10 py-10 px-4 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
-                <%- include('../partials/section-header', {title: 'Past Projects', desc: "Take a look at some of our past projects to get a feel for how we get things done."}) %>
+                <%- include('../partials/section-header', {useH1: false, title: 'Past Projects', desc: "Take a look at some of our past projects to get a feel for how we get things done."}) %>
             </div>
 
             <div class="w-full lg:w-4/5 mx-auto flex flex-col">
