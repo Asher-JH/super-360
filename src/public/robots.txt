@@ -1,2 +1,4 @@
 User-Agent: *
 Allow: /
+
+Sitemap: https://super-360.herokuapp.com/sitemap.xml
