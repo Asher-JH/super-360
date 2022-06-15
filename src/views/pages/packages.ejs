@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {title: 'Packages', useFlowBite: false})  %> 
+    <%- include('../partials/head', {title: 'Packages', useFlowBite: false, metaDesc: ''})  %> 
 <body>
     <%- include('../partials/header', {page: 'packages'}) %>
     <%- include('../partials/header-mobile', {page: 'packages'}) %>
@@ -10,7 +10,7 @@
         <!-- For cleanup, package -> bundle -->
         <section id="packages-section" class="w-full bg-main container mx-auto py-10 px-0 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center pb-10 px-4 lg:px-5">
-                <%- include('../partials/section-header', {title: 'Packages', desc: "Here are three of the packages that we provide. Contact us if you require anymore details."}) %>
+                <%- include('../partials/section-header', {useH1: true, title: 'Packages', desc: "Here are three of the packages that we provide. Contact us if you require anymore details."}) %>
             </div>
 
             <div class="w-full flex flex-row flex-wrap justify-center items-start mt-2 packages-container">

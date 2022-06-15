@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {title: 'Services', useFlowbite: false})  %> 
+    <%- include('../partials/head', {title: 'Services', useFlowbite: false, metaDesc: 'Take a look at the services we provide here at Super 360 Virtual Reality to understand exactly what you\'re gettign when you choose to work wih us.'})  %> 
 <body>
     <%- include('../partials/header', {page: 'services'}) %>
     <%- include('../partials/header-mobile', {page: 'services'}) %>
@@ -9,7 +9,7 @@
         <!-- Services -->
         <section id="services-section" class="w-full bg-main container mx-auto py-10 px-2 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-5">
-                <%- include('../partials/section-header', {title: 'Services', desc: "Here are a few example of the services we offer, for more information you can contact us through WhatsApp or our phone number."}) %>
+                <%- include('../partials/section-header', {useH1: true, title: 'Services', desc: "Here are a few example of the services we offer, for more information you can contact us through WhatsApp or our phone number."}) %>
             </div>
 
             <div class="w-full flex flex-col justify-center items-center">
@@ -22,7 +22,7 @@
         <!-- Benefits -->
         <section id="benefits-section" class="w-full bg-main container mx-auto py-10 px-2 lg:px-16">
             <div class="container mx-auto flex flex-row justify-center items-center py-10 px-3 lg:px-5">
-                <%- include('../partials/section-header', {title: 'Benefits', desc: "Using our services comes with several benefits you can see below."}) %>
+                <%- include('../partials/section-header', {useH1: true, title: 'Benefits', desc: "Using our services comes with several benefits you can see below."}) %>
             </div>
 
             <div class="w-full flex flex-row flex-wrap justify-center items-start mt-8 px-2 lg:px-10 relative">
