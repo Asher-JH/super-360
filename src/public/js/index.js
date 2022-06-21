@@ -1,21 +1,7 @@
-const btns = document.querySelectorAll('.copy-link-btn');
 const jumbo = document.getElementById('jumbo');
 const jumboContainer = document.getElementById('jumbo-container');
 const mainTour = document.getElementById('main-tour');
 const header = document.getElementsByTagName('header');
-
-btns.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
-    const id = `#input-${e.target.id}`;
-
-    const url = document.querySelector(id);
-
-    url.select();
-    url.setSelectionRange(0, 99999);
-
-    navigator.clipboard.writeText(url.value);
-  });
-});
 
 jumbo.addEventListener('wheel', (e) => {
   if (e.deltaY > 0) {
