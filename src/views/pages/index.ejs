@@ -78,14 +78,9 @@
             </div>
 
             <div class="w-full lg:w-4/5 mx-auto flex flex-col">
-                <%- include('../partials/past-project', {id: '0', url: 'https://kuula.co/share/collection/7qB8R?logo=-1&card=1&info=0&fs=2&vr=2&sd=2&initload=4&autopalt=6&thumbs=1', title: 'Dermique'}) %> 
-                <%- include('../partials/past-project', {id: '1', url: 'https://kuula.co/share/collection/7qQtL?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Dar Al Arab'}) %> 
-                <%- include('../partials/past-project', {id: '2', url: 'https://kuula.co/share/collection/7qTVx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Midfields Condo'}) %> 
-                <%- include('../partials/past-project', {id: '3', url: 'https://kuula.co/share/collection/7qHXx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Grocery Store'}) %> 
-                <%- include('../partials/past-project', {id: '4', url: 'https://kuula.co/share/collection/7q2qx?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Blue Factory'}) %> 
-                <%- include('../partials/past-project', {id: '5', url: 'https://kuula.co/share/collection/7qwcP?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Tarbush Restaurant'}) %> 
-                <%- include('../partials/past-project', {id: '6', url: 'https://kuula.co/share/collection/7q3dc?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Putrajaya Cycling Park'}) %> 
-                <%- include('../partials/past-project', {id: '7', url: 'https://kuula.co/share/collection/7qsBK?logo=-1&card=1&info=0&fs=1&vr=1&sd=1&initload=0&autopalt=1&thumbs=1', title: 'Airbnb Condo'}) %> 
+                <% for( let index = 0; index < projects.length; index++ ) { %>
+                    <%- include('../partials/past-project', {id: index, url: projects[index].url, title: projects[index].name}) %> 
+                <% } %>
             </div>
         </section>
 
