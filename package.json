@@ -9,7 +9,7 @@
     "start": "node ./dist/server.js",
     "tailwind:css": "postcss src/public/stylesheets/tailwind.css -o src/public/stylesheets/styles.css",
     "dev:delay": "nodemon --exec 'yarn run tailwind:css && nodemon --delay 500ms ./src/server.ts'",
-    "dev": "nodemon --exec 'yarn run tailwind:css && nodemon ./src/server.ts'"
+    "dev": "nodemon --exec 'npm run tailwind:css && nodemon ./src/server.ts'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "flowbite": "^1.4.5",
+    "google-spreadsheet": "^3.3.0",
     "googleapis": "^104.0.0",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/google-spreadsheet": "^3.2.3",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
