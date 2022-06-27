@@ -7,5 +7,6 @@ declare namespace NodeJS {
     TEMPLATE_ID: string;
     SPREADSHEET_ID: string;
     GOOGLE_APPLICATION_CREDENTIALS: string;
+    GOOGLE_PRIVATE_KEY: string;
   }
 }
