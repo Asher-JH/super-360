@@ -1,39 +1,36 @@
 import express, { Request, Response } from 'express';
 import sgMail from '@sendgrid/mail';
-import { google } from 'googleapis';
+import { GoogleSpreadsheet, GoogleSpreadsheetRow } from 'google-spreadsheet';
 
 const router = express.Router();
 
 router.get('/', async (_req: Request, res: Response) => {
-  const auth = new google.auth.GoogleAuth({
-    scopes: 'https://www.googleapis.com/auth/spreadsheet',
-  });
-
-  const authClientObject = await auth.getClient();
-
-  const service = google.sheets({ version: 'v4', auth: authClientObject });
-
   try {
-    const result = await service.spreadsheets.values.get({
-      spreadsheetId: '1Rg4Ptf08zfkmG3bC3JQ5at8Jh2oRVTM4xX_31xJ0WGc',
-      range: 'A:A',
-      key: 'AIzaSyBUF8Pcwvpnl_8z1N7mYhh3pJk4JZBRY6U',
+    const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID!);
+    await doc.useServiceAccountAuth({
+      client_email: process.env.GOOGLE_APPLICATION_CREDENTIALS!,
+      private_key: process.env.GOOGLE_PRIVATE_KEY!,
     });
-    const data = result.data.values ? result.data.values.length : 0;
+    await doc.loadInfo();
+    const sheet = doc.sheetsById[0];
+    await sheet.loadCells('A1:B26');
+    const data: GoogleSpreadsheetRow[] = await sheet.getRows({
+      limit: 25,
+      offset: 0,
+    });
 
-    console.log(data);
-    res.render('index', { projects: [] });
+    const processedArray = data
+      .map((item) => {
+        if (item.url !== undefined && String(item.url).length !== 0) {
+          return { url: item.url, name: item.name };
+        }
+        return false;
+      })
+      .filter((item) => item !== false);
+
+    res.render('index', { projects: processedArray });
   } catch (err) {
     console.log('Fetch past projects error', err);
-    res.render('index', {
-      // Example
-      projects: [
-        {
-          url: 'https://kuula.co/share/collection/7qB8R?logo=-1&card=1&info=0&fs=2&vr=2&sd=2&initload=4&autopalt=6&thumbs=1',
-          name: 'hello',
-        },
-      ],
-    });
   }
 });
 
