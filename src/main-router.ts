@@ -9,7 +9,7 @@ router.get('/', async (_req: Request, res: Response) => {
     const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID!);
     await doc.useServiceAccountAuth({
       client_email: process.env.GOOGLE_APPLICATION_CREDENTIALS!,
-      private_key: process.env.GOOGLE_PRIVATE_KEY!,
+      private_key: process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, '\n'),
     });
     await doc.loadInfo();
     const sheet = doc.sheetsById[0];
