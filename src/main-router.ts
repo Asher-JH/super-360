@@ -31,6 +31,7 @@ router.get('/', async (_req: Request, res: Response) => {
     res.render('index', { projects: processedArray });
   } catch (err) {
     console.log('Fetch past projects error', err);
+    res.render('index', { projects: [] });
   }
 });
 
